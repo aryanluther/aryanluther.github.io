@@ -256,7 +256,7 @@ img {
   display: flex;
   align-content: center;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 4%;
   opacity: 0;
   pointer-events: none;
   position: fixed;
@@ -279,6 +279,15 @@ img {
 .popup.show {
   pointer-events: auto;
   opacity: 1;
+}
+.popup_cv button {
+  background-color: #4070f4;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  size: 20px;
+  padding: 10px 25px;
 }
 /* ===== SKILLS =====*/
 .skills__container {
