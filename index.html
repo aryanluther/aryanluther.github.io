@@ -3,20 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Aryan luthra">
+        <!-- ==== css ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="">
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
         <title>Aryan Luther Portfolio</title>
     </head>
     <body>
+    </div>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
                     <a href="#" class="nav__logo">Aryan Luther</a>
                 </div>
-
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
@@ -24,6 +26,7 @@
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#Education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#CV" class="nav__link">CV</a></li>
                     </ul>
                 </div>
                 <div class="nav__toggle" id="nav-toggle">
@@ -36,16 +39,11 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Aryan</span><br></h1>
-
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Aryan Luthra</span><br></h1>
                     <a href="#" class="button">Contact</a>
                 </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/aryan-luthra-2504721a4/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/aryanluther?tab=projects" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-                <div class="container ">
+                <div>
+                    <div class="container ">
                     <div class="coffee-header">
                       <div class="coffee-header__buttons coffee-header__button-one"></div>
                       <div class="coffee-header__buttons coffee-header__button-two"></div>
@@ -63,10 +61,11 @@
                       <div class="coffee-medium__cup"></div>
                     </div>
                     <div class="coffee-footer"></div>
-                  </div>
+                </div>
 
                 <div class="home__img">    
                     <img src="assets/img/928B2CD0-DEA1-408A-9808-D943EE6443C9.JPG" alt="">
+                </div>
                 </div>
             </section>
 
@@ -82,8 +81,47 @@
                     <div>
                         <h2 class="about__subtitle">I'am Aryan</h2>
                         <p class="about__text">
-                            I'm a freelancer and a Computer Science Student based in Toronto with a passion for building digital services and mobile apps. I have a knack for all things like launching products, plannign and designing all the way to solving real-life propblems with code. When not online, I love hanging out with my camera and drone. Always looking for new oppurtinites and projects.</p>           
-                    </div>                                   
+                            I'm a freelancer and a Computer Science Student based in Toronto with a passion 
+                            for building digital services and mobile apps. I have a knack for all things like launching products, plannign and designing 
+                            all the way to solving real-life propblems with code. When not online, I love hanging out with my camera 
+                            and drone. Always looking for new oppurtunites and projects.</p> 
+                            <div class="home__social">
+                                <a href="https://www.linkedin.com/in/aryan-luthra-2504721a4/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://github.com/aryanluther?tab=projects" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                            </div> 
+                            <a class="button" id="open">CV</a>           
+                            <div class="popup" id="pop_cv">
+                                <div class="popup_cv" >
+                                    <h2>Dear Recruiter:</h2>
+                                    <p>I am submitting my candidature for a Software Engineer I at Bank of America. My passion is to work with extremely 
+                                        talented people and collaborate to work on projects that would make an immediate impact. I enjoy building apps and 
+                                        manipulate data or code for any immediate projects or problems I want to pursue. For example, 
+                                        I have created a to-do app on which I can keep track of my schedules and share them also. I have learned a lot while
+                                        doing this project for example how to use mongo dB to create a database and share that data. Applying to Bank of America would
+                                        expand my ability to translate real problems into viable solutions.
+                                    </p>
+                                    <br>
+                                    <p>Most of my personal projects always come from a problem I want to solve, and it is by solving those problem that 
+                                        I grow and develop my coding abilities. I always break down my work into smaller parts and work my way up using 
+                                        and learning the necessary tools to complete it. I have excellent work ethics and I enjoy solving difficult challenges 
+                                        and learning from them. Creating solutions is something I am passionate about, which reflects my decision for applying here.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        I truly hope to make a solid contribution to a team at Bank of America, and I look forward to speaking with you.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Thank you for your time and consideration.
+                                    </p>
+                                    <br>
+                                    <h2>
+                                        Sincerely <br> Aryan Luthra
+                                    </h2>
+                                    <button class="clos" id="close">Back</button> 
+                                </div>
+                            </div>
+                    </div>                                 
                 </div>
             </section>
 
@@ -165,12 +203,12 @@
                 <div class="space">
                 <div class="about__container bd-grid">
                     <div>
-                        <h2 class="about__subtitle">* MobiHelp Tutor <br> Object Oriented Programing and HTML & CSS </h2>
-                        <h3 class="about__text"> Work Focus: Guiding students of first and second semester throught their doubts related to oop and Html & Css. </h3>
-                        <h3 class="about__text"> Period - Jan 2021 to April 2021</h3>           
+                        <h2 class="about__subtitle">Rogers <br> Sales associate </h2>
+                        <h3 class="about__text"> Work Focus: Maintaining stock inventory. Deal with cutomer problems and queries reagarding the product.</h3>
+                        <h3 class="about__text"> Period - Jan 2020 to April 2020</h3>           
                     </div> 
                     <div class="about__img">
-                        <img src="assets/img/gbc-logo.png" alt="">
+                        <img src="assets/img/rogers-canada.jpeg" alt="">
                     </div>                                     
                 </div>
                 </div>
@@ -186,9 +224,9 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">Copmputer Programmer Analyst</h2>
+                        <h2 class="about__subtitle">Computer Programmer Analyst</h2>
                         <h3 class="about__text"> Study Focus: Data Structures and Algorithms, Object Oriented Programing and Web & Moblie application Development.</h3>
-                        <h3 class="about__text"> Cum GPA: 3.5</h3>           
+                        <h3 class="about__text"> GPA: 3.5</h3>           
                     </div>                                   
                 </div>
             </section>
@@ -203,7 +241,7 @@
                 </div>
             </section>
         </main>
-
+3
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Aryan - Computer Programmer Analyst</p>
