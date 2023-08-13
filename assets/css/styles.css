@@ -350,23 +350,23 @@ img {
 }
 
 /* ===== WORK =====*/
+.work_align {
+  align-items: center;
+  justify-content: center;
+}
 .work__container {
+  display: flex;
+  flex-wrap: wrap;
   row-gap: 2rem;
 }
 .work__img {
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .work__img img {
-  transition: 1s;
-  cursor: pointer;
-}
-.work__img img:hover {
-  transform: scale(1.1);
-}
-.space {
-  padding-top: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 4rem;
 }
 
 /* ===== CONTACT =====*/
