@@ -57,13 +57,10 @@ sr.reveal(".work__img", { interval: 200 });
 sr.reveal(".contact__input", { interval: 200 });
 
 /*Popup*/
-const open = document.getElementById("open");
-const pop_cv = document.getElementById("pop_cv");
-const close = document.getElementById("close");
+function openPopup() {
+  document.getElementById('pop_cv').style.display = 'flex';
+}
 
-open.addEventListener("click", () => {
-  pop_cv.classList.add("show");
-});
-close.addEventListener("click", () => {
-  pop_cv.classList.remove("show");
-});
+function closePopup() {
+  document.getElementById('pop_cv').style.display = 'none';
+}
