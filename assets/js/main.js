@@ -1,3 +1,31 @@
+/*===== POPUP FOR SCREEN SHOW =====*/
+// Function to check screen size and show/hide popup
+function checkScreenSize() {
+  var backgroundBlur = document.getElementById('backgroundBlur');
+  var popupContainer = document.getElementById('popupContainer');
+
+  if (window.innerWidth < 768) {
+      // Show background blur and popup for smaller screens
+      backgroundBlur.style.display = 'block';
+      popupContainer.style.display = 'block';
+  } else {
+      // Hide background blur and popup for larger screens
+      backgroundBlur.style.display = 'none';
+      popupContainer.style.display = 'none';
+  }
+}
+
+function closePopup() {
+  var backgroundBlur = document.getElementById('backgroundBlur');
+  var popupContainer = document.getElementById('popupContainer');
+  backgroundBlur.style.display = 'none';
+  popupContainer.style.display = 'none';
+}
+
+window.onload = checkScreenSize;
+window.onresize = checkScreenSize;
+
+
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
@@ -56,7 +84,7 @@ sr.reveal(".work__img", { });
 /*SCROLL CONTACT*/
 sr.reveal(".contact__input", { interval: 200 });
 
-/*Popup*/
+/*Popup
 function openPopup() {
   document.getElementById('pop_cv').style.display = 'flex';
 }
@@ -64,3 +92,4 @@ function openPopup() {
 function closePopup() {
   document.getElementById('pop_cv').style.display = 'none';
 }
+*/
