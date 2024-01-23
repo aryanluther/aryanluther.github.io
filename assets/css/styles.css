@@ -350,24 +350,31 @@ img {
 }
 
 /* ===== WORK =====*/
-.work_align {
+.work_container {
+  display: flex;
+  flex-direction: row-reverse; /* Align image to the right */
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 20px; /* Adjust as needed for spacing */
 }
-.work__container {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 2rem;
-}
-.work__img {
-  display: flex;
-  justify-content: center;
-}
+
 .work__img img {
-  width: 200px;
-  height: 200px;
-  border-radius: 4rem;
+  max-width: 200px; 
+  border-radius: 2rem;
 }
+
+.wark_text {
+  max-width: 60%; /* Adjust as needed for text width */
+}
+
+.about__subtitle {
+  margin-bottom: 10px; /* Adjust as needed for spacing */
+}
+
+.about__text {
+  margin-bottom: 10px; /* Adjust as needed for spacing */
+}
+
 
 /* ===== CONTACT =====*/
 .contact_info {
